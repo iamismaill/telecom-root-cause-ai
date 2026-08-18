@@ -1,120 +1,63 @@
 # Telecom Root-Cause AI
 
-Open-source solution for the [Cassava AI Root Cause Detective Hackathon](https://zindi.africa/competitions/cassava-ai-root-cause-detective-hackathon), developed by **Abdulhakin M. Ismail**.
+This is my open-source solution for the [Cassava AI Root Cause Detective Hackathon](https://zindi.africa/competitions/cassava-ai-root-cause-detective-hackathon).
 
-Telecom Root-Cause AI analyzes structured network-performance data to identify the likely causes of service degradation and BTS/cell-level fault scenarios. The system combines telecom domain knowledge, feature engineering, classical machine learning, local LLM inference, and deterministic verification.
+The challenge was about using AI and telecom network data to understand **why network problems happen**. Instead of only detecting that a BTS or cell is performing badly, the goal was to identify the most likely root cause behind the problem.
 
-**4th of 67 active participants · Private leaderboard: 0.98344 · 7 submissions**
+My final solution ranked **4th out of 67 active participants**, with a **0.98344 private leaderboard score after seven submissions**.
 
-> **Research release:** This repository contains the competition solution and its reproducibility artifacts. It is not a production OSS/NMS system. Deployment on a live operator network requires operator-specific validation, integration, and security controls.
+## How it works
+
+The system looks at different types of telecom network information, including throughput, resource-block utilization, handovers, serving distance, antenna configuration, neighboring-cell signals, overlap, and PCI information.
+
+It combines several approaches:
+
+- Telecom engineering rules
+- Feature engineering
+- Classical machine-learning models
+- A small local language model
+- Deterministic checks and verification
+
+Using this information, the system tries to determine the most likely explanation for a network problem.
+
+Depending on the data, it can identify scenarios related to:
+
+- Weak coverage
+- Interference
+- Network congestion
+- Handover problems
+- Antenna configuration
+- Missing neighbors
+- PCI conflicts
+- Transport failures
 
 ## Architecture
 
 ![Telecom Root-Cause AI architecture](docs/assets/telecom-root-cause-ai-architecture.png)
 
-The structural router sends every question through one of three specialized paths before mapping the result back to the answer labels offered in that question.
+The project uses different processing paths depending on the type and structure of the question. The outputs are then checked and mapped to the final root-cause prediction.
 
-## Results
+## Why I made it open source
 
-| Result | Value |
-|---|---:|
-| Final rank | 4 / 67 active participants |
-| Private leaderboard | 0.98344 |
-| Candidate K public leaderboard | 0.965250965 |
-| Candidate J local validation | 99.07% |
-| Test questions | 863 |
-| Submission rows | 3,452 |
+After the competition, some telecom engineers and other people interested in the project asked me about the model and how the solution worked.
 
-Leaderboard performance measures this specific challenge dataset and should not be interpreted as expected accuracy on a live operator network.
+Instead of keeping the work on my computer, I decided to clean it up, document it, and make it public.
 
-## How it works
+I hope telecom engineers, students, researchers, and people interested in AI can use this repository to understand the approach, experiment with it, improve it, or build something new from it.
 
-- **Standard telecom:** parses drive-test and engineering tables, computes radio-network features, applies physical domain rules, and uses a conservative machine-learning ensemble for ambiguous cases.
-- **Markdown telecom:** handles differently formatted telecom tables through a dedicated deterministic decoder.
-- **General knowledge:** uses the local `Qwen2.5-1.5B-Instruct` model, exact mathematical solvers, and a documented correction ledger for supported questions.
-- **Reliability:** verifies identifiers, response multiplicity, boxed-answer syntax, choice membership, stage differences, and frozen artifact hashes.
+This is not a production telecom network-management system. Every operator has different equipment, KPIs, configurations, and network conditions. Using this approach on a real network would require testing and validation with that operator's own data.
 
-The system examines evidence such as throughput, speed, resource-block usage, handovers, serving distance, antenna downtilt, neighboring-cell signal margins, overlap, and PCI modulo-30 conflict.
-
-Using this evidence, it distinguishes likely causes such as weak coverage, interference, congestion, handover problems, antenna-configuration issues, missing neighbors, PCI conflicts, and transport failures. It diagnoses competition scenarios; it does not automatically repair or reconfigure live BTS equipment.
-
-## Why open source?
-
-This project began as my submission to the Cassava AI Root Cause Detective Hackathon. After the competition, telecom engineers and other practitioners expressed interest in understanding and experimenting with the approach.
-
-I am publishing the solution so engineers, students, and researchers can reproduce the work, study the methodology, identify its limitations, and build on it. Contributions and independent validation—particularly across different telecom environments—are welcome.
-
-## Quick start
-
-Python 3.11 or 3.12 is recommended.
+## Getting started
 
 ```bash
 git clone https://github.com/iamismaill/telecom-root-cause-ai.git
 cd telecom-root-cause-ai
+
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+
+pip install -r requirements.txt
 pytest -q
-```
-
-## Reproducibility
-
-The submitted development chain is preserved as:
-
-```text
-Candidate A -> Candidate C -> Candidate F -> Candidate J -> Candidate K
-```
-
-Rebuild the deterministic post-inference stages and verify every artifact hash:
-
-```bash
-python scripts/reproduce_candidate_k.py
-```
-
-The command writes the final artifact to:
-
-```text
-outputs/private_candidates/candidate_k_verified_gk.csv
-```
-
-Candidate K is submission `79SyDg8w`. Its expected SHA-256 is:
-
-```text
-1f80ec2c549a55106ca390a1b1ac99796bbe28b4894c889ee4f9af633b49bb2e
-```
-
-You can also run `notebooks/Candidate_K_Final_Reproduction.ipynb` from top to bottom. Fresh initial inference requires the public [`Qwen/Qwen2.5-1.5B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) checkpoint; model weights are not stored in this repository.
-
-## Responsible use and limitations
-
-- The challenge data is structured and does not represent every live-network environment.
-- The reported leaderboard score is not evidence of 98.344% accuracy on arbitrary operator networks.
-- Root-cause outputs are hypotheses for engineering review, not instructions for autonomous network changes.
-- Equipment vendors, KPI definitions, schemas, configurations, and operating conditions vary by operator.
-- Validate the approach on historical, labeled incidents before considering operational use.
-- Do not load untrusted serialized model artifacts. The included model is covered by the release hashes.
-
-## Repository structure
-
-```text
-current_challenge_data/  Challenge data (CC BY-SA 4.0)
-docs/assets/             Architecture and documentation images
-notebooks/               End-to-end reproduction notebook
-outputs/                 Frozen stages, manifests, and final artifact
-release/                 SHA-256 release manifests
-scripts/                 Training, evaluation, audit, and generation commands
-src/telecom_rca/         Parsers, features, models, solvers, and pipeline
-tests/                   Unit and regression tests
-```
-
-See [CANDIDATE_K_TECHNICAL_DOCUMENTATION.md](CANDIDATE_K_TECHNICAL_DOCUMENTATION.md) for architecture details, features, runtime, logging, maintenance, and additional limitations.
-
-## Data and licensing
-
-The challenge page permits the provided data to be used and shared under the **Creative Commons Attribution-ShareAlike 4.0 International** license. See [DATA_LICENSE.md](DATA_LICENSE.md) for attribution and terms.
-
-Source code in this repository is released under the [MIT License](LICENSE). Dataset files remain under CC BY-SA 4.0. Third-party models and libraries retain their own licenses.
 
 ## Contributing
 
