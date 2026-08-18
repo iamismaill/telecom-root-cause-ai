@@ -1,0 +1,29 @@
+{
+  "audit": {
+    "invalid_answers": 0,
+    "questions": 863,
+    "responses_per_question": 4,
+    "rows": 3452,
+    "unique_ids": 3452
+  },
+  "baseline": "Candidate A",
+  "candidate": "C",
+  "controlled_change": "deterministic Markdown anomaly decoder only",
+  "differing_questions": 93,
+  "differing_rows": 372,
+  "file": "outputs/submissions/candidate_c_markdown_decoder.csv",
+  "generated_at_utc": "2026-08-17T11:48:18.296094+00:00",
+  "markdown_semantic_counts": {
+    "capacity": 9,
+    "inter_frequency_threshold": 15,
+    "intra_frequency_high": 8,
+    "intra_frequency_low": 11,
+    "missing_neighbor": 14,
+    "overlap": 11,
+    "pdcch": 10,
+    "transport": 15,
+    "weak_coverage": 7
+  },
+  "sha256": "222fecf0dca731e90506474353721bea4f7d17fb3eea0a3c2994ff0dc68e7139",
+  "standard_and_gk_identical_to_a": true
+}

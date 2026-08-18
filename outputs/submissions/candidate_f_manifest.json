@@ -1,0 +1,141 @@
+{
+  "audit": {
+    "invalid_answers": 0,
+    "questions": 863,
+    "responses_per_question": 4,
+    "rows": 3452,
+    "unique_ids": 3452
+  },
+  "baseline": "Candidate C",
+  "candidate": "F",
+  "controlled_change": "reusable exact math solvers only",
+  "differing_questions": 9,
+  "differing_rows": 36,
+  "file": "outputs/submissions/candidate_f_verified_math.csv",
+  "generated_at_utc": "2026-08-17T11:48:23.718448+00:00",
+  "proofs": [
+    {
+      "ID": "ID_NKKHCQD42E",
+      "baseline_answer": "2",
+      "changed": false,
+      "proof": "3/36 outcomes",
+      "solver": "dice_sum",
+      "verified_answer": "2"
+    },
+    {
+      "ID": "ID_UK5OBYW14N",
+      "baseline_answer": "4",
+      "changed": false,
+      "proof": "max/min = 10/2/5 = 25",
+      "solver": "maximum_quotient",
+      "verified_answer": "4"
+    },
+    {
+      "ID": "ID_LQ1NC0X9EV",
+      "baseline_answer": "2",
+      "changed": true,
+      "proof": "4x^2+9y^2=4-12(-5)=64",
+      "solver": "expanded_square",
+      "verified_answer": "3"
+    },
+    {
+      "ID": "ID_A982UKJRXP",
+      "baseline_answer": "3",
+      "changed": true,
+      "proof": "lcm(16, 15, 12) = 240",
+      "solver": "lcm",
+      "verified_answer": "4"
+    },
+    {
+      "ID": "ID_JEWV5YMC2P",
+      "baseline_answer": "2",
+      "changed": true,
+      "proof": "valid n values are [1, 2, 4, 5, 10, 20]",
+      "solver": "square_divisors",
+      "verified_answer": "1"
+    },
+    {
+      "ID": "ID_BTFBC72895",
+      "baseline_answer": "3",
+      "changed": false,
+      "proof": "product mod 10 = 0",
+      "solver": "ones_digit",
+      "verified_answer": "3"
+    },
+    {
+      "ID": "ID_AIM9X6ECCC",
+      "baseline_answer": "3",
+      "changed": true,
+      "proof": "integer solutions are [-5, -4, -3, -2, -1, 0, 1]",
+      "solver": "integer_inequality",
+      "verified_answer": "2"
+    },
+    {
+      "ID": "ID_4POTXVDAAL",
+      "baseline_answer": "2",
+      "changed": true,
+      "proof": "sum(k^2, k=21..40) = 19270",
+      "solver": "sum_squares",
+      "verified_answer": "3"
+    },
+    {
+      "ID": "ID_HWRIOUB2KS",
+      "baseline_answer": "4",
+      "changed": true,
+      "proof": "24/48 outcomes",
+      "solver": "dice_product",
+      "verified_answer": "1"
+    },
+    {
+      "ID": "ID_WURGWFHNJW",
+      "baseline_answer": "2",
+      "changed": false,
+      "proof": "(100-25)/1+1 = 76",
+      "solver": "arithmetic_sequence_count",
+      "verified_answer": "2"
+    },
+    {
+      "ID": "ID_4AI7CVVV8Q",
+      "baseline_answer": "1",
+      "changed": true,
+      "proof": "gcd(252, 96) = 12",
+      "solver": "gcd",
+      "verified_answer": "4"
+    },
+    {
+      "ID": "ID_HUD956GTVM",
+      "baseline_answer": "4",
+      "changed": true,
+      "proof": "p3=s1^3-3*s1*s2+3*s3=90",
+      "solver": "newton_sum_cubes",
+      "verified_answer": "1"
+    },
+    {
+      "ID": "ID_XX3ELOVQS6",
+      "baseline_answer": "3",
+      "changed": false,
+      "proof": "odd roots are [3, 5, 7, 9, 11, 13]",
+      "solver": "odd_squares",
+      "verified_answer": "3"
+    },
+    {
+      "ID": "ID_QX6QVSBXGR",
+      "baseline_answer": "4",
+      "changed": false,
+      "proof": "C(15,5) = 3003",
+      "solver": "combinations",
+      "verified_answer": "4"
+    },
+    {
+      "ID": "ID_B95M5YVWPJ",
+      "baseline_answer": "2",
+      "changed": true,
+      "proof": "(2^87+3) mod 7 = 4",
+      "solver": "modular_power",
+      "verified_answer": "4"
+    }
+  ],
+  "sha256": "f32022d7962018f0de6142e939bea79f642f31322249975ca47ce80628c0fa58",
+  "telecom_identical_to_c": true,
+  "verified_questions": 15
+}

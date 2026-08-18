@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "Telecom Root-Cause AI: Cassava AI Root Cause Detective solution"
+type: software
+authors:
+  - family-names: "Ismail"
+    given-names: "Abdulhakin M."
+date-released: 2026-08-17
+license: MIT
+repository-code: "https://github.com/iamismaill/telecom-root-cause-ai"
+keywords:
+  - telecommunications
+  - root-cause analysis
+  - machine learning
+  - network engineering
+  - language models

@@ -1,0 +1,8 @@
+pandas>=2.2,<4
+numpy>=2,<3
+pytest>=8,<10
+scikit-learn>=1.6,<2
+torch>=2.7,<3
+transformers>=4.48,<5
+accelerate>=1.2,<2
+psutil>=6,<8

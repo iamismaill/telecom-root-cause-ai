@@ -1,0 +1,276 @@
+{
+  "created_at_utc": "2026-07-21T08:32:57.540897+00:00",
+  "files": {
+    "README.md": {
+      "bytes": 2406,
+      "sha256": "3f53f8c79f274b46cdf3965b7b08ff03746b616dcf55670a560fefc528d3217f"
+    },
+    "TECHNICAL_REPORT.md": {
+      "bytes": 3833,
+      "sha256": "1ddb739d0c2ad55c2a3114241e3cbeafc9d6ad9d1227f4fa5495207381fb5072"
+    },
+    "current_challenge_data/SampleSubmission.csv": {
+      "bytes": 322471,
+      "sha256": "fb6f0b0fde53da1b746d81b97809d779721ab3243be2f6f33033f056831498ce"
+    },
+    "current_challenge_data/test.csv": {
+      "bytes": 3804075,
+      "sha256": "267ff541b186a03846a11d40cff46fd9ebf01c2b8d827202c117947244f242e3"
+    },
+    "current_challenge_data/train.csv": {
+      "bytes": 10693085,
+      "sha256": "5ff304a14c72cbe144966896ad804d6c6587609d596efd24b71f35db2e026793"
+    },
+    "current_challenge_data/validation_questions.csv": {
+      "bytes": 3870747,
+      "sha256": "603f38c9f3912109a90158ac45c9727e34b8d32ea18d6b788e165be9ee73999f"
+    },
+    "current_challenge_data/validation_target.csv": {
+      "bytes": 69131,
+      "sha256": "7ceb0369747453c53cfe6827b9e3e85752ec0f0daf8fd12d4b2b065f0bbbfb15"
+    },
+    "models/Qwen2.5-1.5B-Instruct/model.safetensors": {
+      "bytes": 3087467144,
+      "sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+    },
+    "notebooks/Candidate_A_Reproducibility.ipynb": {
+      "bytes": 7768,
+      "sha256": "eba9f66325ede334c6a69e8e6b26afa25487d429d751efbcfda8dd177778cdc6"
+    },
+    "outputs/models/c13_resolver.joblib": {
+      "bytes": 257563,
+      "sha256": "62e07383991c679878552b90f187b1948daf1d11a63675a9f06b9f4fe1a9ce26"
+    },
+    "outputs/submissions/candidate_a_raw_markdown.csv": {
+      "bytes": 91186,
+      "sha256": "40f1d1090b8ba2219a89b6dd264e273a33fc3e8ac612601e51cd2b5afed254d4"
+    },
+    "outputs/submissions/stage10_manifest.json": {
+      "bytes": 1171,
+      "sha256": "26c615b2b567748b1f6a788e6fb66635422ca31cba63f9d83feb8d7e38f772e3"
+    },
+    "reports/classical_hybrid.md": {
+      "bytes": 1021,
+      "sha256": "d7ea032863b8c040ea7373fa9982df245408d9b689002fcf3c384e204637f2f8"
+    },
+    "reports/deterministic_baseline.md": {
+      "bytes": 975,
+      "sha256": "02325d78facc56142c78ff8e99858b9d8518b8bb6f018e0abe4de5615ad673aa"
+    },
+    "reports/feature_evidence.md": {
+      "bytes": 2816,
+      "sha256": "cd5f71f65f7f5118397036121e72d132c1d80ae17a69bc15b3bfa4a7d19c81d9"
+    },
+    "reports/gopher_reference_benchmark.md": {
+      "bytes": 918,
+      "sha256": "e2e7d9c751031f166d7d93756d9a7dec067f95055b0d6cf7523d7942026fa03b"
+    },
+    "reports/parser_coverage.md": {
+      "bytes": 648,
+      "sha256": "a768621e1f2b8e0b5958c6abdcb70040ffb46ade36e01c9704f3df075b003036"
+    },
+    "reports/qwen_zero_shot_benchmark.md": {
+      "bytes": 798,
+      "sha256": "aaf8faeaba40a86572355658a40547055ca4ca925cd171f5fd504dae41b82ddb"
+    },
+    "reports/stage6_router.md": {
+      "bytes": 480,
+      "sha256": "12dc05cbbaf4369341db8bf6a0012120e793e24ae49ffccc4526608b15cb262f"
+    },
+    "reports/stage7_robustness.md": {
+      "bytes": 1014,
+      "sha256": "4da6a1354fef52c15dfef25f762dd6ec81ff533b8b5e9e69f065509657c86280"
+    },
+    "reports/stage8_evidence.md": {
+      "bytes": 891,
+      "sha256": "dc104e80a79cfef0d867978477cbc7be9988a837d6bc4beb53e63f8ab1025c43"
+    },
+    "reports/stage9_markdown_comparison.md": {
+      "bytes": 539,
+      "sha256": "01a45360895e403d33e7474def7adb0add1d114e19449f17e7f7d0b4ece9439c"
+    },
+    "requirements.txt": {
+      "bytes": 130,
+      "sha256": "e204350f1b388df154592e4ae6416bee5b6c2fbd0535d561de7695c755bb1153"
+    },
+    "scripts/audit_features.py": {
+      "bytes": 4548,
+      "sha256": "17ffd6e9fc915f1f00cc32ad3a143f769b4fbb44d29041c3f61e57ff7718d942"
+    },
+    "scripts/audit_parser.py": {
+      "bytes": 3376,
+      "sha256": "a8f1307d08ad41a3de80b1fa05e01662b8dd6840d1f0ab3ee0e8da7cff52932e"
+    },
+    "scripts/audit_stage6_router.py": {
+      "bytes": 3355,
+      "sha256": "eadf717f584b1260d1dd9cefc64a74ed585bd4d66b98c0f0eeb16a39f456703c"
+    },
+    "scripts/audit_stage8.py": {
+      "bytes": 4890,
+      "sha256": "4321fb0da3e20903dfa5c7fe0fa2a44c01e575d954dfd39f1fc35ca84ce84f85"
+    },
+    "scripts/benchmark_gopher_reference.py": {
+      "bytes": 5959,
+      "sha256": "88264b22df9223cb9aab2745313d4e376be4daec0a413a5177fcf926a884f239"
+    },
+    "scripts/benchmark_qwen_zero_shot.py": {
+      "bytes": 6238,
+      "sha256": "3999f5a5653ff932b3713caebfa1d0da3ac26e0c2345ca0608ff04502fa4de9c"
+    },
+    "scripts/build_reproducibility_notebook.py": {
+      "bytes": 4423,
+      "sha256": "26f1a1cf0f18e662baeb6810b96ea7ba6f5be8fb68e6376ae0c97f0ed99212f1"
+    },
+    "scripts/compare_markdown_prompts.py": {
+      "bytes": 6685,
+      "sha256": "3d6a6aceca6663038d3fcea023275c6abd67a6d22fc12c59b9d362b99692f4d3"
+    },
+    "scripts/evaluate_deterministic.py": {
+      "bytes": 3544,
+      "sha256": "394bf7e4f4ad6aa7609c4b7028d2beee2f1b079e996facbcf489bbf45ef349eb"
+    },
+    "scripts/evaluate_robustness.py": {
+      "bytes": 5259,
+      "sha256": "23eb553627708f60e7f3cebb7db0b2c3f81c1855c1dba068c6cff50598c6f943"
+    },
+    "scripts/freeze_candidate_a.py": {
+      "bytes": 2292,
+      "sha256": "9224a47b5b2962a4558ed43d04327c2108816ab8c7f093938a3bf2ca2649a1dc"
+    },
+    "scripts/generate_candidate_submissions.py": {
+      "bytes": 9878,
+      "sha256": "71b2effc0f0db920e36fb19f8cc3a0bdf081467db316c736d1a08af1ee333c05"
+    },
+    "scripts/smoke_qwen.py": {
+      "bytes": 1035,
+      "sha256": "cac8db054c46c294c256f01a990b1044da43f83c9619907757b0a2f4a62d4e67"
+    },
+    "scripts/smoke_stage6_routes.py": {
+      "bytes": 1395,
+      "sha256": "fd25251b78e07047f295517e55fc3e02b760275e7c33f5f43236c732f5917485"
+    },
+    "scripts/train_evaluate_classical.py": {
+      "bytes": 6401,
+      "sha256": "e822f24be72d8b48a2266f2ce121b1c54577528ea4b154210d13194c55cdcdab"
+    },
+    "src/telecom_rca/__init__.py": {
+      "bytes": 194,
+      "sha256": "e127eae03a3e3327b6cad1993325a12f13d01ecdf59df349e87dd3769538bb55"
+    },
+    "src/telecom_rca/data.py": {
+      "bytes": 1300,
+      "sha256": "f8b0f966b6c315a3ccfc4a8ce74ffcce890ea4d609749cdb637c93e9c5977443"
+    },
+    "src/telecom_rca/diagnosis.py": {
+      "bytes": 2174,
+      "sha256": "f87036c26eeea210bfd957887aaab4c1082b1df794f197ced8e180cbe65d6daf"
+    },
+    "src/telecom_rca/evaluation.py": {
+      "bytes": 2152,
+      "sha256": "254c3c54e45d82a6deaa4c45e310f8d2191638981d736427da42e14a60609735"
+    },
+    "src/telecom_rca/features.py": {
+      "bytes": 14089,
+      "sha256": "c349418a8b26fab7fc26f45fad8417c33d890aace0a356bf549db82572403e1d"
+    },
+    "src/telecom_rca/general_knowledge.py": {
+      "bytes": 1445,
+      "sha256": "fafcdb121cfa170a30ad93055ae0e99a792e11185f16333aa95966ca7f83695a"
+    },
+    "src/telecom_rca/markdown_features.py": {
+      "bytes": 13051,
+      "sha256": "5b806ec18528f1e6774d2bedac07b567fe6c7686fda2c1f2096cd48852572b96"
+    },
+    "src/telecom_rca/ml.py": {
+      "bytes": 4443,
+      "sha256": "196435274ee0336dd6acd57c22a86d04f5a57da9691fc30ccfb7fcf2328ac812"
+    },
+    "src/telecom_rca/options.py": {
+      "bytes": 3001,
+      "sha256": "3625a39cc426b8feb1c0b02a45aa3e333abdc50e05b8680effb960f2cf44ec13"
+    },
+    "src/telecom_rca/parser.py": {
+      "bytes": 5231,
+      "sha256": "3301b200eb66947be8a0aca89321d3a67118b98ae0c3f8b264527819ca65c764"
+    },
+    "src/telecom_rca/pipeline.py": {
+      "bytes": 5626,
+      "sha256": "beaa88b60b7da60fa504a7549339b76ed1db6feb15bc7e7a7945d249166039f5"
+    },
+    "src/telecom_rca/qwen.py": {
+      "bytes": 4445,
+      "sha256": "7b12fd579b630df1b895873e752acbe348ff33e9c5bab48ef5824ea174303b7b"
+    },
+    "src/telecom_rca/robustness.py": {
+      "bytes": 7677,
+      "sha256": "bb5b9372983e23d577b6be0cc909e92a1ff371653994256930b097d2fa1004b4"
+    },
+    "src/telecom_rca/routing.py": {
+      "bytes": 2121,
+      "sha256": "ba5508a8665bb529e13691aa3625619de6373ce312f69203417bb10ac77546ee"
+    },
+    "src/telecom_rca/submission.py": {
+      "bytes": 4835,
+      "sha256": "79ecf32f5ff36260b40df5ea83a9964aa73cc157672d2d807dd12feace3d3047"
+    },
+    "tests/test_data.py": {
+      "bytes": 474,
+      "sha256": "a4826ff7623c131d941552f2a9bfff8df46386cd1e73b2ce12a9a3e541ed5949"
+    },
+    "tests/test_diagnosis.py": {
+      "bytes": 886,
+      "sha256": "c294131ebb16377122a66519b049f99e1dc6ddd807e7ca8c125eb1da5ba3d66c"
+    },
+    "tests/test_evaluation.py": {
+      "bytes": 705,
+      "sha256": "3e274b50e3518e317c32441d4f195e30dcb447586946ab19b50d44be6807fc6b"
+    },
+    "tests/test_features.py": {
+      "bytes": 2606,
+      "sha256": "9effb0773d692834796cdef1ab4f19ecc9891e49c5e5607217d89cf89a56075e"
+    },
+    "tests/test_ml.py": {
+      "bytes": 1050,
+      "sha256": "c7ba33e259c634049a035af55f85c5c2016ba301afd5d572d28b8918397c56e4"
+    },
+    "tests/test_options.py": {
+      "bytes": 1081,
+      "sha256": "291631ae0d1d45311651b9a443060483740c65d4908e8e115f884c4974d0a580"
+    },
+    "tests/test_parser.py": {
+      "bytes": 1936,
+      "sha256": "4bbba0e4789b6a3482dd209585513f8c0903f3b0c5c7a97f48aab00c719c5922"
+    },
+    "tests/test_pipeline.py": {
+      "bytes": 1658,
+      "sha256": "433598a1208bad8c45d8a764b82939902c9513ab1da2b4f72779254c05aaafea"
+    },
+    "tests/test_qwen.py": {
+      "bytes": 855,
+      "sha256": "ef7811c852ccc808a439de53623ca7d85f7e69929942b42062d621c5f9eb8a29"
+    },
+    "tests/test_robustness.py": {
+      "bytes": 2540,
+      "sha256": "8572bc51b55b37691c0ca4ea2782170ece212edaae647e386a5f6d8501f63f73"
+    },
+    "tests/test_routing.py": {
+      "bytes": 726,
+      "sha256": "3ae309dcbacfcf4f61f924fb0c98c2bd47bc35f415a5c07ec4dada944c9454f7"
+    },
+    "tests/test_stage8.py": {
+      "bytes": 1640,
+      "sha256": "1dea6059bb1e7da781e7fa649828700d8ea5fcfb7dfe9b08ae1f56004ec1c98f"
+    },
+    "tests/test_stage9.py": {
+      "bytes": 1329,
+      "sha256": "6caa12d04899fe177d41f70b11ff5c0f97bba8e5ffe852ef895be04babb6d0bb"
+    },
+    "tests/test_submission.py": {
+      "bytes": 1435,
+      "sha256": "a47297d04523a5fe6ab4855a03599810a271a7793b67748c09fbd55d6e2106ec"
+    }
+  },
+  "public_score": 0.861003861,
+  "release": "candidate-a-public-0.861003861",
+  "zindi_submission_id": "YFKDgJ1K"
+}

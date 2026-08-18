@@ -1,0 +1,188 @@
+{
+  "generated_at_utc": "2026-08-17T11:50:55.402826+00:00",
+  "candidate": "K",
+  "baseline": "Candidate J",
+  "controlled_change": "independently verified disputed/majority GK corrections only",
+  "file": "outputs/private_candidates/candidate_k_verified_gk.csv",
+  "sha256": "1f80ec2c549a55106ca390a1b1ac99796bbe28b4894c889ee4f9af633b49bb2e",
+  "audit": {
+    "rows": 3452,
+    "questions": 863,
+    "responses_per_question": 4,
+    "unique_ids": 3452,
+    "invalid_answers": 0
+  },
+  "differing_questions": 15,
+  "differing_rows": 60,
+  "telecom_identical_to_j": true,
+  "changes": [
+    {
+      "ID": "ID_F41VGWBC1M",
+      "before": [
+        "\\boxed{1}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "probability partition",
+      "proof": "P(rain)=0.60; P(rain and no sun)=0.30; therefore P(rain and sun)=0.30."
+    },
+    {
+      "ID": "ID_9THPS87IYG",
+      "before": [
+        "\\boxed{4}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "prime divisibility",
+      "proof": "The stated prime factors include both 2 and 5, so 2*5=10 must divide the number."
+    },
+    {
+      "ID": "ID_BFCE8Q0NC8",
+      "before": [
+        "\\boxed{4}"
+      ],
+      "after": [
+        "\\boxed{1}"
+      ],
+      "method": "weekday modular arithmetic",
+      "proof": "706 mod 7=6; six days after Saturday is Friday."
+    },
+    {
+      "ID": "ID_9101M99NZH",
+      "before": [
+        "\\boxed{3}"
+      ],
+      "after": [
+        "\\boxed{4}"
+      ],
+      "method": "linear fraction equation",
+      "proof": "He gives N/12 and retains 11N/12=66, hence N=72."
+    },
+    {
+      "ID": "ID_T0JVEAUAUL",
+      "before": [
+        "\\boxed{4}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "percentage equation",
+      "proof": "41 grams is 14%, so the allowance is 41/0.14=292.857, approximately 293."
+    },
+    {
+      "ID": "ID_ESBTZT6NDA",
+      "before": [
+        "\\boxed{4}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "domain exclusions",
+      "proof": "The original nested expression excludes x=0, x=-1, and x=-1/2; sum=-3/2."
+    },
+    {
+      "ID": "ID_EWPJ0ICQ5K",
+      "before": [
+        "\\boxed{3}"
+      ],
+      "after": [
+        "\\boxed{4}"
+      ],
+      "method": "MVT derivative roots",
+      "proof": "The secant slope is zero; 2cos(x)+4cos(4x)=0 has four roots in (0,pi)."
+    },
+    {
+      "ID": "ID_QMEJCKCV41",
+      "before": [
+        "\\boxed{3}"
+      ],
+      "after": [
+        "\\boxed{2}"
+      ],
+      "method": "linear equation",
+      "proof": "3x-4(x-2)+6x-8 simplifies to 5x=0, so x=0."
+    },
+    {
+      "ID": "ID_WZO5VTSIU8",
+      "before": [
+        "\\boxed{4}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "function composition",
+      "proof": "h(x)=f(g(x))=6x-5, hence h inverse(x)=(x+5)/6."
+    },
+    {
+      "ID": "ID_IZX12JDP5R",
+      "before": [
+        "\\boxed{2}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "source interpretation",
+      "proof": "UN Charter Article 33 supplies negotiation, mediation, arbitration, and judicial settlement avenues."
+    },
+    {
+      "ID": "ID_84S1LZ41FP",
+      "before": [
+        "\\boxed{2}"
+      ],
+      "after": [
+        "\\boxed{4}"
+      ],
+      "method": "passage interpretation",
+      "proof": "The recurring general patriarchal theme is prescribed female purity and upright conduct."
+    },
+    {
+      "ID": "ID_GDP6RCEM06",
+      "before": [
+        "\\boxed{3}"
+      ],
+      "after": [
+        "\\boxed{2}"
+      ],
+      "method": "historical causal link",
+      "proof": "European joint-stock East India companies drove the foreign-goods trade later targeted by Swadeshi."
+    },
+    {
+      "ID": "ID_5CZX3LD206",
+      "before": [
+        "\\boxed{1}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "passage interpretation",
+      "proof": "The song accuses the Winter King of taking Ferdinand's lawful Bohemian crown: rebellion."
+    },
+    {
+      "ID": "ID_IHPC5PR5Z5",
+      "before": [
+        "\\boxed{1}"
+      ],
+      "after": [
+        "\\boxed{3}"
+      ],
+      "method": "historical elimination",
+      "proof": "Machine guns, tropical-disease protection, and steamships directly enabled 19th-century penetration; joint-stock companies contributed least."
+    },
+    {
+      "ID": "ID_5J41PYKMO9",
+      "before": [
+        "\\boxed{1}"
+      ],
+      "after": [
+        "\\boxed{2}"
+      ],
+      "method": "poetic contrast",
+      "proof": "Apartheid declares violently what the wider world practices or 'whispers' as subtler discrimination."
+    }
+  ],
+  "upload_status": "uploaded",
+  "zindi_submission_id": "79SyDg8w",
+  "public_score": 0.965250965
+}
